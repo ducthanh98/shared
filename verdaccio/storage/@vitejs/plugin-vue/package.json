@@ -11252,7 +11252,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"668318a7a34db0402c26ef8f03bdd67c\"",
-			"fetched": 1749022112165
+			"fetched": 1749023662516
 		}
 	},
 	"_distfiles": {
@@ -11840,7 +11840,7 @@
 			"shasum": "9e8a512eb174bfc2a333ba959bbf9de428d89ad8"
 		}
 	},
-	"_rev": "4-071fc54ba64beaa8",
+	"_rev": "5-daa18fe39b16c8bf",
 	"_id": "@vitejs/plugin-vue",
 	"readme": ""
 }
