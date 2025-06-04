@@ -4901,9 +4901,12 @@
 	"_attachments": {
 		"js-8.57.0.tgz": {
 			"shasum": "a5417ae8427873f1dd08b70b3574b453e67b5f7f"
+		},
+		"js-8.57.1.tgz": {
+			"shasum": "de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
 		}
 	},
-	"_rev": "2-a533e667ee236485",
+	"_rev": "3-9611c86b9c157386",
 	"_id": "@eslint/js",
 	"readme": "[![npm version](https://img.shields.io/npm/v/@eslint/js.svg)](https://www.npmjs.com/package/@eslint/js)\n\n# ESLint JavaScript Plugin\n\n[Website](https://eslint.org) | [Configure ESLint](https://eslint.org/docs/latest/use/configure) | [Rules](https://eslint.org/docs/rules/) | [Contributing](https://eslint.org/docs/latest/contribute) | [Twitter](https://twitter.com/geteslint) | [Chatroom](https://eslint.org/chat)\n\nThe beginnings of separating out JavaScript-specific functionality from ESLint.\n\nRight now, this plugin contains two configurations:\n\n- `recommended` - enables the rules recommended by the ESLint team (the replacement for `\"eslint:recommended\"`)\n- `all` - enables all ESLint rules (the replacement for `\"eslint:all\"`)\n\n## Installation\n\n```shell\nnpm install @eslint/js -D\n```\n\n## Usage\n\nUse in your `eslint.config.js` file anytime you want to extend one of the configs:\n\n```js\nimport { defineConfig } from \"eslint/config\";\nimport js from \"@eslint/js\";\n\nexport default defineConfig([\n\t// apply recommended rules to JS files\n\t{\n\t\tname: \"your-project/recommended-rules\",\n\t\tfiles: [\"**/*.js\"],\n\t\tplugins: {\n\t\t\tjs,\n\t\t},\n\t\textends: [\"js/recommended\"],\n\t},\n\n\t// apply recommended rules to JS files with an override\n\t{\n\t\tname: \"your-project/recommended-rules-with-override\",\n\t\tfiles: [\"**/*.js\"],\n\t\tplugins: {\n\t\t\tjs,\n\t\t},\n\t\textends: [\"js/recommended\"],\n\t\trules: {\n\t\t\t\"no-unused-vars\": \"warn\",\n\t\t},\n\t},\n\n\t// apply all rules to JS files\n\t{\n\t\tname: \"your-project/all-rules\",\n\t\tfiles: [\"**/*.js\"],\n\t\tplugins: {\n\t\t\tjs,\n\t\t},\n\t\textends: [\"js/all\"],\n\t\trules: {\n\t\t\t\"no-unused-vars\": \"warn\",\n\t\t},\n\t},\n]);\n```\n\n## License\n\nMIT"
 }

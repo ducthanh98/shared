@@ -3657,7 +3657,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"b841d87bb90da95e81f23c0d5a4ad309\"",
-			"fetched": 1749021690162
+			"fetched": 1749022239081
 		}
 	},
 	"_distfiles": {
@@ -3912,7 +3912,7 @@
 			"shasum": "a7054dcc145a967dd4dc8fee845a57c1316c9df8"
 		}
 	},
-	"_rev": "2-4321b5904369204f",
+	"_rev": "3-411ab3648be37f77",
 	"_id": "@babel/helper-validator-identifier",
 	"readme": ""
 }

@@ -11252,7 +11252,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"668318a7a34db0402c26ef8f03bdd67c\"",
-			"fetched": 1749021675922
+			"fetched": 1749022112165
 		}
 	},
 	"_distfiles": {
@@ -11835,9 +11835,12 @@
 	"_attachments": {
 		"plugin-vue-5.1.4.tgz": {
 			"shasum": "72b8b705cfce36b00b59af196195146e356500c4"
+		},
+		"plugin-vue-5.2.4.tgz": {
+			"shasum": "9e8a512eb174bfc2a333ba959bbf9de428d89ad8"
 		}
 	},
-	"_rev": "2-19096d5ffb08819f",
+	"_rev": "4-071fc54ba64beaa8",
 	"_id": "@vitejs/plugin-vue",
 	"readme": ""
 }

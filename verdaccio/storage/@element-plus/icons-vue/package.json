@@ -3819,7 +3819,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"efad1c14f6e8dd5fd9282f537f9f5851\"",
-			"fetched": 1749021690394
+			"fetched": 1749022259026
 		}
 	},
 	"_distfiles": {
@@ -4009,7 +4009,7 @@
 			"shasum": "1f635ad5fdd5c85ed936481525570e82b5a8307a"
 		}
 	},
-	"_rev": "2-bbcaa519ead49992",
+	"_rev": "3-7711d28a570b3fab",
 	"_id": "@element-plus/icons-vue",
 	"readme": "ERROR: No README data found!"
 }

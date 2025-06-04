@@ -28756,7 +28756,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"7d38017ab58d8962e6d4098b806ac1f1\"",
-			"fetched": 1749021700114
+			"fetched": 1749022243547
 		}
 	},
 	"_distfiles": {
@@ -29904,9 +29904,12 @@
 	"_attachments": {
 		"parser-7.27.4.tgz": {
 			"shasum": "f92e89e4f51847be05427285836fc88341c956df"
+		},
+		"parser-7.27.5.tgz": {
+			"shasum": "ed22f871f110aa285a6fd934a0efed621d118826"
 		}
 	},
-	"_rev": "2-35b22838717def0f",
+	"_rev": "4-a8efc9b60b8dd8a3",
 	"_id": "@babel/parser",
 	"readme": ""
 }

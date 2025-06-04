@@ -5949,7 +5949,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"5a1e1aec92f39ca2b12366f10572ad71\"",
-			"fetched": 1749021691555
+			"fetched": 1749022264130
 		}
 	},
 	"_distfiles": {
@@ -6429,7 +6429,7 @@
 			"shasum": "6d8f0c768e070e64309af8004bb94e68ab2bb3b0"
 		}
 	},
-	"_rev": "2-d4b2cf4bc2ba4e7d",
+	"_rev": "3-0e3c2e5ce74d3cfb",
 	"_id": "@esbuild/linux-x64",
 	"readme": "# esbuild\n\nThis is the Linux 64-bit binary for esbuild, a JavaScript bundler and minifier. See https://github.com/evanw/esbuild for details."
 }

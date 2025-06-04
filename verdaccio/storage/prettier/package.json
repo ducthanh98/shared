@@ -23604,9 +23604,12 @@
 	"_attachments": {
 		"prettier-3.2.5.tgz": {
 			"shasum": "e52bc3090586e824964a8813b09aba6233b28368"
+		},
+		"prettier-3.5.3.tgz": {
+			"shasum": "4fc2ce0d657e7a02e602549f053b239cb7dfe1b5"
 		}
 	},
-	"_rev": "2-5e2c540cdc28e3ce",
+	"_rev": "3-d83bbc0e9073c1e8",
 	"_id": "prettier",
 	"readme": ""
 }

@@ -2663,7 +2663,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"69b5eaa60b695a2ef4866415a7fbbb49\"",
-			"fetched": 1749021694170
+			"fetched": 1749022234625
 		}
 	},
 	"_distfiles": {
@@ -2853,7 +2853,7 @@
 			"shasum": "54da796097ab19ce67ed9f88b47bb2ec49367687"
 		}
 	},
-	"_rev": "2-b9817aedbc257f28",
+	"_rev": "3-b53c0daa2e20a5ad",
 	"_id": "@babel/helper-string-parser",
 	"readme": ""
 }
