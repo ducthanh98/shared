@@ -1,0 +1,47 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+    curl \
+    openssl \
+    libnss3 \
+    libnss3-tools \
+    wget \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libcairo2 \
+    libdbus-1-3 \
+    libdrm2 \
+    libgbm1 \
+    libgtk-3-0 \
+    libpango-1.0-0 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxrandr2 \
+    libxrender1 \
+    libxtst6 \
+    libasound2 \
+    libgdk-pixbuf2.0-0 \
+    libxss1 \
+    fonts-liberation \
+ && rm -rf /var/lib/apt/lists/*
+
+# Tách hẳn instruction COPY ra
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+# Cài Playwright + Firefox engine với đầy đủ dependencies
+RUN pip install playwright \
+ && playwright install --with-deps firefox chromium
+
+# Copy toàn bộ code ứng dụng
+COPY . /app
+
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
