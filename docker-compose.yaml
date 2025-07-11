@@ -1,0 +1,12 @@
+version: "3.9"
+
+
+services:
+  nodejs:
+    image: node:20.18.1
+    container_name: nodejs
+    command: tail -f /dev/null
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: /app
