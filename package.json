@@ -1,62 +1,37 @@
 {
-  "name": "ChatGW",
-  "version": "1.0.0",
+  "name": "hr-tool",
+  "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
   },
   "dependencies": {
-    "access-log": "^0.4.1",
-    "ansi-regex": "^6.0.1",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.2.1",
-    "boxicons": "^2.1.4",
-    "core-js": "^3.8.3",
-    "element-ui": "^2.13.2",
-    "js-cookie": "2.2.0",
-    "node-sass": "^4.14.1",
-    "vue": "^2.6.14",
-    "vue-highlightjs": "^1.3.3",
-    "vue-json-excel": "^0.3.0",
-    "vue-markdown": "^2.2.4",
-    "vue-multiselect": "^2.1.6",
-    "vue-router": "^3.0.1",
-    "vue-xlsx": "^0.2.1",
-    "vue2-daterange-picker": "^0.6.8",
-    "vuex": "^3.5.1",
-    "nprogress": "0.2.0"
+    "@tailwindcss/vite": "^4.1.11",
+    "@toast-ui/editor": "^3.2.2",
+    "@vueuse/core": "^11.1.0",
+    "axios": "^1.7.7",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.9.11",
+    "js-cookie": "^3.0.5",
+    "lodash-es": "^4.17.21",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3",
+    "vue3-toastify": "^0.2.3",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "sass": "1.26.2",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.4.10"
+  }
 }
