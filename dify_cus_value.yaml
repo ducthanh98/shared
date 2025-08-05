@@ -72,8 +72,8 @@ global:
     value: "<lấy FILE_MINIO_PASS từ env-mas-file-service>"
   - name: S3_ENDPOINT
     value: "<lấy FILE_MINIO_ENDPOINT từ env-mas-file-service>"
-  - name: STORAGE_TYPE
-    value: "s3"
+  # - name: STORAGE_TYPE
+    # value: "s3"
   - name: STORAGE_LOCAL_PATH
     value: "/app/api/storage"
   
@@ -90,18 +90,6 @@ global:
     value: "20"
   
   # API Configuration
-  - name: MODE
-    value: "api"
-  - name: SERVICE_API_URL
-    value: ""
-  - name: CONSOLE_API_URL
-    value: ""
-  - name: APP_WEB_URL
-    value: ""
-  - name: CONSOLE_WEB_URL
-    value: ""
-  - name: FILES_URL
-    value: ""
   - name: API_TOOL_DEFAULT_TIMEOUT
     value: "300"
   - name: HTTP_REQUEST_NODE_SSL_VERIFY
@@ -261,20 +249,20 @@ api:
     # Overrides the image tag whose default is the chart appVersion.
   envs:
   # sandbox - override some values from global config for API specific needs
-  - name: CODE_MAX_NUMBER
-    value: "9223372036854775807"
-  - name: CODE_MIN_NUMBER
-    value: "-9223372036854775808"
-  - name: CODE_MAX_STRING_LENGTH
-    value: "80000"
-  - name: TEMPLATE_TRANSFORM_MAX_LENGTH
-    value: "80000"
-  - name: CODE_MAX_STRING_ARRAY_LENGTH
-    value: "30"
-  - name: CODE_MAX_OBJECT_ARRAY_LENGTH
-    value: "30"
-  - name: CODE_MAX_NUMBER_ARRAY_LENGTH
-    value: "1000"
+  # - name: CODE_MAX_NUMBER
+  #   value: "9223372036854775807"
+  # - name: CODE_MIN_NUMBER
+  #   value: "-9223372036854775808"
+  # - name: CODE_MAX_STRING_LENGTH
+  #   value: "80000"
+  # - name: TEMPLATE_TRANSFORM_MAX_LENGTH
+  #   value: "80000"
+  # - name: CODE_MAX_STRING_ARRAY_LENGTH
+  #   value: "30"
+  # - name: CODE_MAX_OBJECT_ARRAY_LENGTH
+  #   value: "30"
+  # - name: CODE_MAX_NUMBER_ARRAY_LENGTH
+  #   value: "1000"
   imagePullSecrets: []
   podAnnotations: {}
   podSecurityContext: {}
@@ -388,8 +376,8 @@ plugin_daemon:
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
   envs:
-  - name: DB_DATABASE
-    value: "dify_plugin"
+  # - name: DB_DATABASE
+  #   value: "dify_plugin"
   - name: SERVER_PORT
     value: "5002"
   - name: SERVER_KEY
@@ -421,11 +409,6 @@ plugin_daemon:
     value: "false"
   - name: PLUGIN_PYTHON_ENV_INIT_TIMEOUT
     value: "720"
-  # Override marketplace and pip mirror URLs for plugin daemon
-  - name: MARKETPLACE_API_URL
-    value: "https://paymentuat.tpb.vn/services/marketplace/"
-  - name: PIP_MIRROR_URL
-    value: "https://ebit.tpb.vn/nexus/repository/python-hosted/simple/"
   imagePullSecrets: []
   podAnnotations: {}
   podSecurityContext: {}
