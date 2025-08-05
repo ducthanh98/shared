@@ -4,6 +4,7 @@ set -x
 # ✅ Cấu hình registry đích
 REGISTRY_URL="https://ebit.tpb.vn/nexus/repository/npm-hosted/"
 
+# npm config set $REGISTRY_URL/:auth "YWlpdC1nZW5haTpUcGJAMTIz"
 # ✅ Thư mục chứa file .tgz của Verdaccio (thay nếu cần)
 VERDACCIO_STORAGE="./verdaccio/storage"
 
